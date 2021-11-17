@@ -1,0 +1,90 @@
+.restaurant-found {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+.restaurant-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.restaurant-details a {
+    display: block;
+    text-decoration: none;
+    color: #F9B208;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.restaurant-details > * {
+    margin: 10px 0;
+}
+
+.restaurant-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rating {
+    color: #F9B208;
+}
+
+.rating span {
+    font-weight: bold;
+}
+
+#loader {
+    margin: 50px auto;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    border: 16px solid #F3F3F3;
+    border-radius: 50%;
+    border-top: 16px solid #F9B208;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 768px) {
+    .restaurant-found {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .restaurant-found {
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+}

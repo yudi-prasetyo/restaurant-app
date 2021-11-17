@@ -1,0 +1,20 @@
+.favorites {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.favorites h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #F9B208;
+}
+
+@media only screen and (min-width: 768px) {
+    .favorites h2 {
+    font-size: 40px;
+    }
+}
